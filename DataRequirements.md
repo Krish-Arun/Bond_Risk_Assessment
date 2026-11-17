@@ -57,6 +57,17 @@ For training, collect at least **5–10 years of daily data**. For a weekly mode
 | Bank credit growth | Month, credit growth, sectoral credit | Monthly | Indicates credit demand and economic momentum |
 | Foreign trade | Exports, imports, trade deficit, current-account balance | Monthly/quarterly | Affects currency, inflation, and external financing |
 
+| # | Source and link | Requirement it addresses | Data points covered / limitations |
+| :--- | :--- | :--- | :--- |
+| 1 | MoSPI API portal — https://api.mospi.gov.in/ | CPI inflation | Access route for documented CPI APIs. Relevant to CPI indices and inflation by available groups/subgroups and items. Do not assume a ready-made core-CPI series is provided. |
+| 2 | MoSPI CPI API manual — https://www.api.mospi.gov.in/API/CPI%20API%20User%20Manual.pdf | CPI inflation | API documentation covering authentication, request parameters and CPI endpoints. Documentation, not the data itself. |
+| 3 | MoSPI eSankhyiki — https://esankhyiki.mospi.gov.in/ | CPI inflation; IIP growth; GDP growth; WPI — relevant catalogue | Official dataset portal for CPI, industrial production and national accounts; WPI was also identified in the earlier catalogue discussion. Validate each selected table’s components, base year, frequency and export availability. |
+| 4 | MoSPI annual report — https://mospi.gov.in/sites/default/files/publication_reports/Annual_Report_2024-25_R.pdf | Documentation supporting #3 | Describes portal dataset coverage. Not a training dataset or download endpoint. |
+| 5 | Ministry of Commerce TradeStat — https://tradestat.commerce.gov.in/ | Foreign trade | Official trade-data portal for exports/imports and related breakdowns. Does not establish current-account-balance coverage. |
+| 6 | TradeStat monthly aggregate table — https://tradestat.commerce.gov.in/tag/monthly_trade_rs | Foreign trade | Monthly exports, imports and trade balance in rupees, including monthly/cumulative presentations. Keep monthly flows separate from cumulative totals. |
+| 7 | Ministry of Commerce Trade Analytics — https://trade-analytics.commerce.gov.in/public | Foreign trade | Trade extraction portal for exports/imports with available commodity/country breakdowns. Not a current-account dataset. |
+| 8 | Trade Analytics FAQ — https://trade-analytics.commerce.gov.in/public/de/quickfiles/FAQs_Final_Public_page.pdf | Documentation supporting #7 | Download instructions and extraction limitations. Not observation-level data. |
+
 ## D. Global and currency data
 
 | Data | Fields needed | Frequency | Why you need it |
