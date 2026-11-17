@@ -108,15 +108,7 @@ ______________________________________________________________________
 
 # 2. Data for corporate-bond prediction
 
-For corporate bonds, you need **two prediction components**:
-
-$$
-\widehat{Y}_{\text{corporate},t+1}
-=
-\widehat{Y}_{\text{G-Sec},t+1}
-+
-\widehat{\text{Credit Spread}}_{t+1}
-$$
+**Predicted Corporate Yield ($t+1$) = Predicted G-Sec Yield ($t+1$) + Predicted Credit Spread ($t+1$)**
 
 The G-Sec model predicts the broad Indian interest-rate environment. The credit-spread model predicts the extra yield investors demand for that issuer, sector, rating, maturity, and liquidity profile.
 
@@ -133,7 +125,7 @@ The G-Sec model predicts the broad Indian interest-rate environment. The credit-
 | Credit spreads | Corporate yield minus comparable G-Sec yield | Daily | Main target for issuer-risk prediction |
 | Sector spreads | Sector average yield, sector average spread | Daily/weekly | Captures industry-wide risk |
 
-SEBI publishes daily corporate-bond trading data by exchange and reporting platform, including trade counts and traded amounts. cite cite[^15_2][^15_3]
+SEBI publishes daily corporate-bond trading data by exchange and reporting platform, including trade counts and traded amounts.
 
 ## B. Issuer financial data
 
