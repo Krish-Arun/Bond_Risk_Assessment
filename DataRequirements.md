@@ -16,6 +16,16 @@ ______________________________________________________________________
 
 For training, collect at least **5–10 years of daily data**. For a weekly model, 10–15 years is better because it covers different interest-rate cycles.
 
+| # | Source and link | Requirement it addresses | Data points covered / limitations |
+| :--- | :--- | :--- | :--- |
+| 1 | CCIL historical G-Sec trades — https://www.ccilindia.com/web/ccil/g-sec-historical-trades | Indian G-Sec yields; 10-year G-Sec yield; G-Sec trading data | Historical G-Sec transactions. Relevant for trade date, security identifier, traded price, yield and traded amount. Exact export columns and historical coverage remain unvalidated. Do not assume clean/dirty prices, coupon, maturity, trade counts or bid/ask quotes are all included. |
+| 2 | CCIL tenor-wise indicative yields — https://www.ccilindia.com/web/ccil/tenorwise-indicative-yields | Benchmark yields; 10-year G-Sec yield; yield-curve data | Date/tenor-based indicative yields. Verify the availability of your exact 2-, 5-, 10-, 15-, 20- and 30-year tenors and daily history. Does not automatically establish coverage of zero-coupon yields, par yields or forward rates. |
+| 3 | CCIL trading-platform analysis — https://www.ccilindia.com/web/ccil/trading-platform | G-Sec trading data; potentially 10-year G-Sec trading activity | Relevant for security-wise trading activity and liquidity analysis. Verify whether downloads contain prices, yields, traded volumes and trade counts. |
+| 4 | CCIL bid–ask spread — https://www.ccilindia.com/web/ccil/bid-ask-spread | G-Sec trading data | Bid–ask spread/liquidity indicators. A spread is not the same as separate bid-yield and ask-yield observations; security-level history needs checking. |
+| 5 | CCIL dataset user guide — https://www.ccilindia.com/documents/d/ccil/data-statistics-user-guide | Navigation across several Table A requirements | Documentation identifying CCIL datasets. Not a dataset itself. |
+| 6 | FRED Indian 10-year government bond yield — https://fred.stlouisfed.org/series/INDIRLTLT01STM | 10-year G-Sec yield — partial coverage | Monthly long-term government bond yield series. Not daily, and does not provide ISIN, price, volume, coupon or maturity. |
+| 7 | FRED direct CSV export — https://fred.stlouisfed.org/graph/fredgraph.csv?id=INDIRLTLT01STM | Same requirement as #6 | Download route for the same monthly series—not an additional dataset. |
+
 ## B. RBI and policy data
 
 | Data | Fields needed | Frequency | Why you need it |
