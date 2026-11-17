@@ -39,6 +39,12 @@ For training, collect at least **5–10 years of daily data**. For a weekly mode
 | Fiscal deficit | Month/quarter, deficit, borrowing requirement | Monthly/quarterly | Indicates future government financing needs |
 | Liquidity indicator | Banking-system surplus/deficit, net liquidity injection | Daily/weekly | Affects short-term rates and bond demand |
 
+| # | Source and link | Requirement it addresses | Data points covered / limitations |
+| :--- | :--- | :--- | :--- |
+| 1 | RBI Database on Indian Economy — DBIE — https://data.rbi.org.in/DBIE/ | Repo rate; reverse repo/SDF/MSF; CRR/SLR; liquidity operations; liquidity indicators; government borrowing — relevant portal | Official discovery/download portal for RBI statistical series. The previous response did not identify and validate a separate downloadable table for each requirement. Select the precise series and verify fields, frequency and history before collection. |
+| 2 | Official dataset compendium — https://mospi.gov.in/sites/default/files/publication_reports/Compendium_of_Datasets_and_Registries_in_India_2024_1.pdf | Source discovery for Tables A, B and C | Catalogue describing official datasets and access routes. Not observation-level training data. In particular, an annual government-security-yield table is not a substitute for a daily target. |
+
+
 ## C. Indian macroeconomic data
 
 | Data | Fields needed | Frequency | Why you need it |
