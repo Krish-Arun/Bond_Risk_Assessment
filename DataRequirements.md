@@ -68,6 +68,18 @@ For training, collect at least **5–10 years of daily data**. For a weekly mode
 | 7 | Ministry of Commerce Trade Analytics — https://trade-analytics.commerce.gov.in/public | Foreign trade | Trade extraction portal for exports/imports with available commodity/country breakdowns. Not a current-account dataset. |
 | 8 | Trade Analytics FAQ — https://trade-analytics.commerce.gov.in/public/de/quickfiles/FAQs_Final_Public_page.pdf | Documentation supporting #7 | Download instructions and extraction limitations. Not observation-level data. |
 
+---
+
+### remaining data gaps and pending requirements checklist - 1
+
+| Your table | Requirements not yet fully covered by a validated dataset link |
+| :--- | :--- |
+| A — Core target data | Security master containing ISIN, coupon and maturity; verified clean and dirty prices; 91-/182-/364-day T-bill yields; G-Sec auction results; complete zero-coupon/par/forward curves; security-level historical bid and ask yields. |
+| B — RBI and policy | Dedicated downloads for MPC dates, decisions and stance; OMO/VRR/VRRR operations; government borrowing calendars/results; fiscal deficit; a defined daily banking-system liquidity series. Policy-rate series still need their exact DBIE tables selected. |
+| C — Macroeconomic data | PMI, bank-credit growth, current-account balance, and a consistent core-CPI series. Exact CPI/WPI/IIP/GDP exports still require field-level validation. |
+
+---
+
 ## D. Global and currency data
 
 | Data | Fields needed | Frequency | Why you need it |
